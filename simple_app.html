@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Simple app</title>
+</head>
+<body>
+<div id="main">
+	<h2 id="heading">This is Main Heading</h2>
+	<p>The button below changes the color and font size of Main Heading. Try it!</p>
+	<hr>
+
+	<h5 style="color: brown">Type color name you want to apply and then click on "color" button.</h5>
+	<button id="button">Change Color</button>
+	<input type="text" name="Something" id="input">
+
+	<div id="buttonmaker">
+		<h5 style="color: brown">Type the font size such as 22 or 43 to change the size and then click "font size" button.</h5>		
+		<button id="font">Change Font Size</button>
+		<input type="text" name="Box" id="sizeInlarger">
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	const myHeading = document.getElementById('heading');
+	const button = document.getElementById('button');
+	const inputName = document.getElementById('input');
+	const fontLarge = document.getElementById('font');
+	const sizeIN = document.getElementById('sizeInlarger');
+
+
+	button.addEventListener('click', function(){
+		myHeading.style.color = inputName.value ;
+	});
+
+	fontLarge.addEventListener('click', function(){
+		myHeading.style.fontSize = sizeIN.value.toString() + "px";
+		
+	});
+</script>
+
+</body>
+</html>
