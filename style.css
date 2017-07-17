@@ -1,0 +1,58 @@
+#button{
+	margin : 10px;
+	padding: 10px;
+	color: white;
+	background-color: blue;
+	display: inline-block;
+	position: relative;
+	border-radius: 10px;
+
+
+}
+
+#button:hover{
+
+	box-shadow: 2px 2px 2px 0px grey;
+}
+
+#main{
+	display: block;
+	border-radius: 10px;
+	width: 70%;
+	position: relative;
+	left: 200px;
+	padding: 20px;
+	border: none;
+	background-color: lightblue;
+
+}
+
+#input{
+	padding:10px;
+	color: green;
+	font-size: 22px;
+
+}
+#input:select{
+	border-color: pink;
+}
+
+#font{
+	margin-right: 20px;
+	color: white;
+	font: bold;
+	font-size: 22px;
+	background-color: black;
+}
+
+#fontSmall{
+	color: white;
+	background-color: black;
+}
+
+#sizeInlarger{
+	padding:10px;
+	color: black;
+	font-size: 22px;
+	display: inline;
+}
